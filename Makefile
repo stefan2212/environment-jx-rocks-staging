@@ -22,5 +22,5 @@ clean:
 
 
 test:
-    ADDRESS=`kubectl -n jx-staging get ing go-demo-6 \\
-    -o jsonpath="{.spec.rules[0].host}"` go test -v
+	ADDRESS=`kubectl -n jx-staging get ing go-demo-6 \
+	-o jsonpath="{.spec.rules[0].host}"` go test -v
